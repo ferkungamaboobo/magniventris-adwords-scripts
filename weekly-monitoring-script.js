@@ -21,6 +21,9 @@ function main() {
 	var campaignIterator = AdsApp.campaigns()
 	.withCondition('Status = ENABLED').get();
 	
+	var campaignIterator = AdsApp.campaigns()
+	.withCondition('Status = ENABLED').get();
+	
    function percIncrease(a, b) {
         var percent;
         if(b !== 0) {

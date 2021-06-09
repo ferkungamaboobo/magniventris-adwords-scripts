@@ -1,2 +1,2 @@
-# firmidable-adwords-scripts
-AdWords scripts for Firmidable accounts
+# magniventris-adwords-scripts
+AdWords scripts for Magniventris accounts

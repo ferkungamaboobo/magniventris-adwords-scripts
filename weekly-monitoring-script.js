@@ -37,20 +37,20 @@ function main() {
   
 	while (campaignIterator.hasNext()) {
 		var campaign = campaignIterator.next();
-		var impr30Days = campaign.getStatsFor({year: thirtyDaysAgo.getFullYear(),month: thirtyDaysAgo.getMonth(), day: thirtyDaysAgo.getDate()},{year: today.getFullYear(), month: today.getMonth(), day: today.getDate()}).getImpressions();
-		var impr3060Days = campaign.getStatsFor({year: sixtyDaysAgo.getFullYear(),month: sixtyDaysAgo.getMonth(), day: sixtyDaysAgo.getDate()},{year: thirtyDaysAgo.getFullYear(),month: thirtyDaysAgo.getMonth(), day: thirtyDaysAgo.getDate()}).getImpressions()
-		var impr90Days = campaign.getStatsFor({year: ninetyDaysAgo.getFullYear(),month: ninetyDaysAgo.getMonth(), day: ninetyDaysAgo.getDate()},{year: today.getFullYear(), month: today.getMonth(), day: today.getDate()}).getImpressions();
-		var impr90180Days = campaign.getStatsFor({year: oneEightyDaysAgo.getFullYear(),month: oneEightyDaysAgo.getMonth(), day: oneEightyDaysAgo.getDate()},{year: ninetyDaysAgo.getFullYear(), month: ninetyDaysAgo.getMonth(), day: ninetyDaysAgo.getDate()}).getImpressions();
+		var impr30Days = campaign.getStatsFor({year: thirtyDaysAgo.getFullYear(),month: thirtyDaysAgo.getMonth()+1, day: thirtyDaysAgo.getDate()},{year: today.getFullYear(), month: today.getMonth()+1, day: today.getDate()}).getImpressions();
+		var impr3060Days = campaign.getStatsFor({year: sixtyDaysAgo.getFullYear(),month: sixtyDaysAgo.getMonth()+1, day: sixtyDaysAgo.getDate()},{year: thirtyDaysAgo.getFullYear(),month: thirtyDaysAgo.getMonth()+1, day: thirtyDaysAgo.getDate()}).getImpressions()
+		var impr90Days = campaign.getStatsFor({year: ninetyDaysAgo.getFullYear(),month: ninetyDaysAgo.getMonth()+1, day: ninetyDaysAgo.getDate()},{year: today.getFullYear(), month: today.getMonth()+1, day: today.getDate()}).getImpressions();
+		var impr90180Days = campaign.getStatsFor({year: oneEightyDaysAgo.getFullYear(),month: oneEightyDaysAgo.getMonth()+1, day: oneEightyDaysAgo.getDate()},{year: ninetyDaysAgo.getFullYear(), month: ninetyDaysAgo.getMonth()+1, day: ninetyDaysAgo.getDate()}).getImpressions();
 		
-		var cpc30Days = campaign.getStatsFor({year: thirtyDaysAgo.getFullYear(),month: thirtyDaysAgo.getMonth(), day: thirtyDaysAgo.getDate()},{year: today.getFullYear(), month: today.getMonth(), day: today.getDate()}).getAverageCpc();
-		var cpc3060Days = campaign.getStatsFor({year: sixtyDaysAgo.getFullYear(),month: sixtyDaysAgo.getMonth(), day: sixtyDaysAgo.getDate()},{year: thirtyDaysAgo.getFullYear(),month: thirtyDaysAgo.getMonth(), day: thirtyDaysAgo.getDate()}).getAverageCpc()
-		var cpc90Days = campaign.getStatsFor({year: ninetyDaysAgo.getFullYear(),month: ninetyDaysAgo.getMonth(), day: ninetyDaysAgo.getDate()},{year: today.getFullYear(), month: today.getMonth(), day: today.getDate()}).getAverageCpc();
-		var cpc90180Days = campaign.getStatsFor({year: oneEightyDaysAgo.getFullYear(),month: oneEightyDaysAgo.getMonth(), day: oneEightyDaysAgo.getDate()},{year: ninetyDaysAgo.getFullYear(), month: ninetyDaysAgo.getMonth(), day: ninetyDaysAgo.getDate()}).getAverageCpc();
+		var cpc30Days = campaign.getStatsFor({year: thirtyDaysAgo.getFullYear(),month: thirtyDaysAgo.getMonth()+1, day: thirtyDaysAgo.getDate()},{year: today.getFullYear(), month: today.getMonth()+1, day: today.getDate()}).getAverageCpc();
+		var cpc3060Days = campaign.getStatsFor({year: sixtyDaysAgo.getFullYear(),month: sixtyDaysAgo.getMonth()+1, day: sixtyDaysAgo.getDate()},{year: thirtyDaysAgo.getFullYear(),month: thirtyDaysAgo.getMonth()+1, day: thirtyDaysAgo.getDate()}).getAverageCpc()
+		var cpc90Days = campaign.getStatsFor({year: ninetyDaysAgo.getFullYear(),month: ninetyDaysAgo.getMonth()+1, day: ninetyDaysAgo.getDate()},{year: today.getFullYear(), month: today.getMonth()+1, day: today.getDate()}).getAverageCpc();
+		var cpc90180Days = campaign.getStatsFor({year: oneEightyDaysAgo.getFullYear(),month: oneEightyDaysAgo.getMonth()+1, day: oneEightyDaysAgo.getDate()},{year: ninetyDaysAgo.getFullYear(), month: ninetyDaysAgo.getMonth()+1, day: ninetyDaysAgo.getDate()}).getAverageCpc();
 		
-		var cost30Days = campaign.getStatsFor({year: thirtyDaysAgo.getFullYear(),month: thirtyDaysAgo.getMonth(), day: thirtyDaysAgo.getDate()},{year: today.getFullYear(), month: today.getMonth(), day: today.getDate()}).getCost();
-		var cost3060Days = campaign.getStatsFor({year: sixtyDaysAgo.getFullYear(),month: sixtyDaysAgo.getMonth(), day: sixtyDaysAgo.getDate()},{year: thirtyDaysAgo.getFullYear(),month: thirtyDaysAgo.getMonth(), day: thirtyDaysAgo.getDate()}).getCost()
-		var cost90Days = campaign.getStatsFor({year: ninetyDaysAgo.getFullYear(),month: ninetyDaysAgo.getMonth(), day: ninetyDaysAgo.getDate()},{year: today.getFullYear(), month: today.getMonth(), day: today.getDate()}).getCost();
-		var cost90180Days = campaign.getStatsFor({year: oneEightyDaysAgo.getFullYear(),month: oneEightyDaysAgo.getMonth(), day: oneEightyDaysAgo.getDate()},{year: ninetyDaysAgo.getFullYear(), month: ninetyDaysAgo.getMonth(), day: ninetyDaysAgo.getDate()}).getCost();
+		var cost30Days = campaign.getStatsFor({year: thirtyDaysAgo.getFullYear(),month: thirtyDaysAgo.getMonth()+1, day: thirtyDaysAgo.getDate()},{year: today.getFullYear(), month: today.getMonth()+1, day: today.getDate()}).getCost();
+		var cost3060Days = campaign.getStatsFor({year: sixtyDaysAgo.getFullYear(),month: sixtyDaysAgo.getMonth()+1, day: sixtyDaysAgo.getDate()},{year: thirtyDaysAgo.getFullYear(),month: thirtyDaysAgo.getMonth()+1, day: thirtyDaysAgo.getDate()}).getCost()
+		var cost90Days = campaign.getStatsFor({year: ninetyDaysAgo.getFullYear(),month: ninetyDaysAgo.getMonth()+1, day: ninetyDaysAgo.getDate()},{year: today.getFullYear(), month: today.getMonth()+1, day: today.getDate()}).getCost();
+		var cost90180Days = campaign.getStatsFor({year: oneEightyDaysAgo.getFullYear(),month: oneEightyDaysAgo.getMonth()+1, day: oneEightyDaysAgo.getDate()},{year: ninetyDaysAgo.getFullYear(), month: ninetyDaysAgo.getMonth()+1, day: ninetyDaysAgo.getDate()}).getCost();
 
 		if ( (percIncrease(impr3060Days, impr30Days) > imprThirtyDayMargin) || (percIncrease(impr3060Days, impr30Days) < -imprThirtyDayMargin) ) {
 			emailBody += campaign.getName() + " 30-day impressions " + percIncrease(impr3060Days, impr30Days) + "%";

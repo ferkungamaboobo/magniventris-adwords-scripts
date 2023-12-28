@@ -4,13 +4,13 @@ function main() {
     budget = 874.57;
   }
   function getAcctCost() {
-    var currentAccount = AdWordsApp.currentAccount();
+    var currentAccount = AdsApp.currentAccount();
     var stats = currentAccount.getStatsFor('THIS_MONTH');
     monthCost = stats.getCost();
     Logger.log('$' + monthCost + ' cost');
   }
   function pauseCampaign() {
-    var campaignIterator = AdWordsApp.campaigns().get();
+    var campaignIterator = AdsApp.campaigns().get();
     while (campaignIterator.hasNext()) {
       var campaign = campaignIterator.next();
       campaign.pause();
